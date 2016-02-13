@@ -1,0 +1,7 @@
+{
+    "config": {
+        "port": 3030,
+        "hostname": "localhost",
+        "context_root": "http://localhost:3030"
+    }
+}

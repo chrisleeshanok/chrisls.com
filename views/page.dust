@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Chris Lee-Shanok | Full Stack Developer</title>
+        <link rel="stylesheet" href="{context_root}/public/css/main.css"/>
     </head>
     <body>
+        {>"header"/}
         {+content}
-            Page content goes here
+            {!Page Content goes here !}
         {/content}
     </body>
 </html>

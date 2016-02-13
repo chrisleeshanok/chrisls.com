@@ -5,3 +5,10 @@
 body {
     background-color: $page-background;
 }
+
+header {
+    width: 100vw;
+    height: 66vh;
+    background-color: $header-background;
+    color: $white;
+}
