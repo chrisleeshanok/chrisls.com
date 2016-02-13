@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chris Lee-Shanok | Full Stack Developer</title>
+    </head>
+    <body>
+        {+content}
+            Page content goes here
+        {/content}
+    </body>
+</html>
