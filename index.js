@@ -6,7 +6,8 @@ const nconf = require('nconf');
 
 //nconf configuration
 nconf.argv().env();
-nconf.file({ file: 'config/config.json' });
+nconf.file('config', 'config/config.json');
+nconf.file('blogs', 'docs/blogs.json');
 
 //grab config file
 const config = nconf.get('config');
