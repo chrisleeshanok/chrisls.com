@@ -1,25 +1,27 @@
 "use strict";
 const express = require('express');
-const router = express.Router();
 const nconf = require('nconf');
-const marked = require('marked');
-const fs = require('fs');
+const Parser = require('../src/modules/md-parser');
+
+const router = express.Router();
 
 router.route('/')
 .get((req, res, next) => {
     const config = nconf.get('config');
     const blogs = nconf.get('blogs');
 
-    var blog = fs.readFile(blogs[0].path, 'utf8', (err, data) => {
-        if (err) throw err;
-
-        const blog = marked(data);
-        res.render('homepage', {
-            context_root: config.context_root,
-            blog_data: blog
-        });
-    });
-
+    const blog = Parser.parseFile(blogs[0].path)
+    .then(
+        function(result) {
+            res.render('homepage', {
+                context_root: config.context_root,
+                blog_data: result
+            });
+        },
+        function(error) {
+            res.sendStatus(500);
+        }
+    );
 });
 
 module.exports = router;

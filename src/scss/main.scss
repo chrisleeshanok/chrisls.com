@@ -4,11 +4,12 @@
 
 body {
     background-color: $page-background;
+    color: $white;
 }
 
 header {
     width: 100vw;
-    height: 66vh;
+    height: 40vh;
     min-height: 300px;
     background-color: $header-background;
     color: $white;
