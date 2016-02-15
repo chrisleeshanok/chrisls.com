@@ -1,16 +1,39 @@
 @import 'colors';
 @import 'fonts';
 @import 'reset';
+@import 'common';
 
 body {
-    background-color: $page-background;
+    background-color: $primary-color;
     color: $white;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 header {
     width: 100vw;
-    height: 40vh;
+    height: 33vh;
     min-height: 300px;
-    background-color: $header-background;
-    color: $white;
+    background-color: $primary-color-dark;
+    color: lighten($primary-color-light, 10%);
+    text-align: center;
+
+    padding-top: 15vh;
+}
+
+.social-links {
+    margin-top: 4vh;
+    .social-link {
+
+        margin: 0px 10px;
+        .social-link-icon {
+            width: 40px;
+            height: 40px;
+            fill: $primary-color-light;
+
+            &:hover {
+                fill: $white;
+            }
+        }
+    }
 }

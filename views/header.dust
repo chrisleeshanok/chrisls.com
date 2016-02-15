@@ -1,2 +1,14 @@
 <header>
+
+    <h1>Chris Lee-Shanok</h1>
+    <h3>Full Stack Developer</h3>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/chrisleeshanok" class="social-link">
+            {>"svg/linkedin_svg"/}
+        </a>
+        <a href="https://www.github.com/chrisleeshanok" class="social-link">
+            {>"svg/github_svg"/}
+        </a>
+    </div>
+
 </header>
