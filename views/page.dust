@@ -7,9 +7,11 @@
     </head>
     <body>
         {>"header"/}
-        {+content}
-            {!Page Content goes here !}
-        {/content}
+        <main>
+            {+content}
+                {!Page Content goes here !}
+            {/content}
+        </main>
 
         {>"footer"/}
         {#analytics}

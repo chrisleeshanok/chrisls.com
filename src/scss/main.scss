@@ -98,7 +98,8 @@ footer {
     }
 }
 
-/*Temp Mobile Enhancements (refactor and put in proper areas) */
+/*Temp Mobile Enhancements for mockup purposes (refactor and put in proper areas) */
+
 @media screen and (max-width: 1080px) {
 
     header {
@@ -129,4 +130,37 @@ footer {
         padding: 0 10%;
         box-sizing: border-box;
     }
+}
+
+@media screen and (min-width: 1400px) {
+    header {
+        height: 100vh;
+        width: 30vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    main {
+        padding-left: 30vw;
+        width: 70vw;
+        min-height: 74vh;
+        margin: 0;
+
+        .container {
+            width: 100%;
+            padding: 0 5%;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    }
+
+    footer {
+        width: 70vw;
+        padding-left: 30vw;
+        height: 7vh;
+    }
+
+
+
 }

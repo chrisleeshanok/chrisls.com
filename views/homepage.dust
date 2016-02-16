@@ -1,10 +1,10 @@
 {>"page"/}
 {<content}
-    <main class="blogs container">
+    <section class="container">
         <div class="col-12">
             <article class="blog">
                 {blog_data|s}
             </article>
         </div>
-    </main>
+    </section>
 {/content}
