@@ -2,8 +2,22 @@ $column-name: col;
 $numCols: 12;
 
 .container {
-    width: 100%;
+    width: 1080px;
+    margin: 0 auto;
 
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+.container-fluid {
+    width: 100%;
+    
     &:after {
         visibility: hidden;
         display: block;
