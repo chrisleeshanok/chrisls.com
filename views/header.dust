@@ -1,13 +1,19 @@
 <header>
 
     <h1>Chris Lee-Shanok</h1>
-    <h3>Full Stack Developer</h3>
+    <h4>Full Stack Developer | Toronto, Canada</h4>
     <div class="social-links">
-        <a href="https://www.linkedin.com/in/chrisleeshanok" class="social-link">
+        <a href="https://www.linkedin.com/in/chrisleeshanok" class="social-link" alt="LinkedIn">
             {>"svg/linkedin_svg"/}
         </a>
-        <a href="https://www.github.com/chrisleeshanok" class="social-link">
+        <a href="https://www.github.com/chrisleeshanok" class="social-link" alt="Github">
             {>"svg/github_svg"/}
+        </a>
+        <a href="http://www.meetup.com/members/47867302/" class="social-link" alt="Meetup">
+            {>"svg/meetup_svg"/}
+        </a>
+        <a href="mailto:chris.leeshanok@gmail.com" class="social-link" alt="Email">
+            {>"svg/email_svg"/}
         </a>
     </div>
 

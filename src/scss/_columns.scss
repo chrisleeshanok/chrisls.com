@@ -1,0 +1,22 @@
+$column-name: col;
+$numCols: 12;
+
+.container {
+    width: 100%;
+
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+}
+
+@for $i from 1 through $numCols {
+     .#{$column-name}-#{$i} {
+         float: left;
+          width: $i * (100% / $numCols);
+     }
+}

@@ -9,5 +9,6 @@
         {+content}
             {!Page Content goes here !}
         {/content}
+        {>"footer"/}
     </body>
 </html>

@@ -1,4 +1,12 @@
 {>"page"/}
 {<content}
-    {blog_data|s}
+    <main class="blogs container">
+        <div class="col-3">&nbsp;</div>
+        <div class="col-6">
+            <article class="blog">
+                {blog_data|s}
+            </article>
+        </div>
+        <div class="col-3"></div>
+    </main>
 {/content}
