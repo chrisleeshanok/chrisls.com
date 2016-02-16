@@ -4,7 +4,8 @@
   "description": "My personal website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "scripts/start.sh",
+    "stop": "scripts/stop.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
