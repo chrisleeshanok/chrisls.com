@@ -1,0 +1,7 @@
+{
+    "config": {
+        "port": 80,
+        "hostname": "localhost",
+        "context_root": "http://chrisls.com"
+    }
+}

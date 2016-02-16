@@ -15,7 +15,8 @@ router.route('/')
         function(result) {
             res.render('homepage', {
                 context_root: config.context_root,
-                blog_data: result
+                blog_data: result,
+                analytics: (process.env.NODE_ENV === 'production')
             });
         },
         function(error) {

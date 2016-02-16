@@ -6,7 +6,8 @@ const nconf = require('nconf');
 
 //nconf configuration
 nconf.argv().env();
-nconf.file('config', 'config/config.json');
+let environment = (process.env.NODE_ENV) ? process.env.NODE_ENV : 'production';
+nconf.file('config', 'config/config-' + environment + '.json');
 nconf.file('blogs', 'docs/blogs.json');
 
 //grab config file
