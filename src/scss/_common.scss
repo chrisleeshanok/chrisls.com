@@ -86,3 +86,14 @@ pre {
         display: block;
     }
 }
+
+article {
+    padding-bottom: 2em;
+    border-bottom: 1px solid lighten($secondary-text-color, 40%);
+    margin-bottom: 3em;
+
+    &:last-child {
+        border-bottom: none;
+        margin-bottom: 0em;
+    }
+}

@@ -2,9 +2,11 @@
 {<content}
     <section class="container">
         <div class="col-12">
-            <article class="blog">
-                {blog_data|s}
-            </article>
+            {#blog_data}
+                <article class="blog">
+                    {blog|s}
+                </article>
+            {/blog_data}
         </div>
     </section>
 {/content}

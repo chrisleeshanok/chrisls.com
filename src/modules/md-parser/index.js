@@ -2,6 +2,7 @@
 
 var marked = require('marked');
 var fs = require('fs');
+var async = require('async');
 
 var MDParser = {
     /*
@@ -33,7 +34,34 @@ var MDParser = {
         returns: a promise containing either all markdown as an html string or an error
     */
     parseFiles: function(paths) {
-        
+        var self = this;
+        var parsePromise = new Promise(function(resolve, reject) {
+
+            if (!paths || paths.length < 1) {
+                reject(new Error('Paths array to parseFiles empty or non-existant'));
+            }
+
+            var parseOne = function(path, callback) {
+                self.parseFile(path).then(
+                    function(result) {
+                        callback(null, result);
+                    },
+                    function(error) {
+                        callback(error, null);
+                    }
+                );
+            }
+
+            async.map(paths, parseOne, function(err, results) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(results);
+                }
+            });
+        });
+
+        return parsePromise;
     }
 
 };

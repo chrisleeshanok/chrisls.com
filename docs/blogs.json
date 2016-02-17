@@ -1,8 +1,12 @@
 {
     "blogs": [
         {
+            "date": "2016-02-17T06:36:14.811Z",
+            "path": "docs/blogs/feb17-2016.md"
+        },
+        {
             "date": "2016-02-14T08:09:26.982Z",
-            "path": "docs/blogs/20160214080926982Z.md"
+            "path": "docs/blogs/feb15-2016.md"
         }
     ]
 }
