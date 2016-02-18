@@ -29,6 +29,12 @@ header {
 }
 
 .social-links {
+
+    margin-bottom: 1em;
+
+    & + & {
+        margin-bottom: 0;
+    }
     .social-link {
 
         margin: 0px 10px;
@@ -51,7 +57,7 @@ header {
             }
 
             &:active {
-                fill: #ff0000;
+                fill: $accent-green;
             }
         }
     }

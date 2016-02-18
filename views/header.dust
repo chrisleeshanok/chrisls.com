@@ -16,5 +16,13 @@
             {>"svg/email_svg"/}
         </a>
     </div>
+    <div class="social-links">
+        <a href="https://www.twitter.com/c_ls" class="social-link" alt="Twitter">
+            {>"svg/twitter_svg"/}
+        </a>
+        <a href="https://www.npmjs.com/~chrisls" class="social-link" alt="NPM">
+            {>"svg/npm_svg"/}
+        </a>
+    </div>
 
 </header>
