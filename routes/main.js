@@ -1,7 +1,7 @@
 "use strict";
 const express = require('express');
 const nconf = require('nconf');
-const Parser = require('../src/modules/md-parser');
+const BatchedMarkdown = require('batched-markdown');
 
 const router = express.Router();
 
@@ -16,9 +16,8 @@ router.route('/')
         blogFiles.push(blog.path);
     });
 
-    Parser.parseFiles(blogFiles)
-    .then(
-        function(result) {
+    BatchedMarkdown.parseFiles(blogFiles)
+        .then(function(result) {
 
             let blogs = new Array();
             result.forEach(function(blog) {
@@ -32,12 +31,12 @@ router.route('/')
                 blog_data: blogs,
                 analytics: (process.env.NODE_ENV === 'production')
             });
-        },
-        function(error) {
+        })
+        .catch(function(error) {
             console.log(error);
             res.sendStatus(500);
-        }
-    );
+        });
+
 });
 
 module.exports = router;
