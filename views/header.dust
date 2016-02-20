@@ -23,6 +23,9 @@
         <a href="https://www.npmjs.com/~chrisls" class="social-link" alt="NPM">
             {>"svg/npm_svg"/}
         </a>
+        <a href="https://www.flickr.com/photos/ceribria" class="social-link" alt="Flickr">
+            {>"svg/flickr_svg"/}
+        </a>
     </div>
 
 </header>
